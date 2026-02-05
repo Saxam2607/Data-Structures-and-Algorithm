@@ -1,14 +1,17 @@
-
-public class Right_rotate {
+/*Rotate Array
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+ */
+public class Right_rotate_189 {
     public static void main(String[] args) {
         int a[] = {1,2,3,4,5,6,7};
-        RightRotate(a,1,7);
+        RightRotate(a,1);
         for(int i=0; i<7; i++) {
             System.out.print(a[i]+" ");
         }
     }
 
-    static void RightRotate(int arr[], int d, int n) {
+    static void RightRotate(int arr[], int d) {
+        int n = arr.length;
         d=d%n;
         int temp[] = new int[d];
 

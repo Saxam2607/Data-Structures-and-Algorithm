@@ -1,6 +1,10 @@
+/*Missing Number
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+*/
+
 import java.util.Scanner;
 
-public class MissingNumber_Sum {
+public class MissingNumber_Sum_268 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter no. of elements:");
@@ -15,7 +19,7 @@ public class MissingNumber_Sum {
     }
 
     static int missed(int arr[]) {
-        int n = arr.length+1;
+        int n = arr.length;
         int sum = (n*(n+1))/2;
 
         int s2=0;

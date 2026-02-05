@@ -1,25 +1,28 @@
-package Striver;
+package Sorting;
 
 public class Selection_sort {
     public static void main(String[] args) {
-        int a[] = {3,1,66,32,71,12,30,4,55,100};
-        selection(a,10);
+        int a[] = {13,46,24,52,20,9};
+        selection(a);
     
-        for(int i = 0; i < 10; i++) {
-            System.out.print(a[i] +" ");
+        for(int num : a) {
+            System.out.print(num +" ");
         }
     }
 
-    static void selection(int arr[],int n) {
+    static void selection(int arr[]) {
 
-        for(int i = 0; i <= n-1; i++) {
-            for(int j = i; j < n-1; j++) {
-                if(arr[j] < arr[i]) {
-                    int temp = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = temp;
+        int n = arr.length;
+        for(int i = 0; i < n; i++) {
+            int minIndex = i;
+            for(int j = i; j < n; j++) {
+                if(arr[j] < arr[minIndex]) {
+                    minIndex = j;
                 }
             }
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
         }
     }
 }

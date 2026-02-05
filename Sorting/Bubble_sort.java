@@ -1,25 +1,29 @@
-package Striver;
+package Sorting;
 
 public class Bubble_sort {
     public static void main(String[] args) {
-        int a[] = {3,1,66,32,71,12,30,4,55,100};
-        bubble(a,10);
+        int a[] = {13,46,24,52,20,9};
+        bubble(a);
     
-        for(int i = 0; i < 10; i++) {
-            System.out.print(a[i] +" ");
+        for(int num : a) {
+            System.out.print(num +" ");
         }
     }
     
-    static void bubble(int arr[], int n) {
-         
-        for(int i = 0; i < n-1; i++) {
-            for(int j = 0; j < n-i-1; j++) {
+    static void bubble(int arr[]) {
+        int n = arr.length;
+        for(int i = n; i > 0; i--) {
+            int didSwap = 0;
+            for(int j = 0; j < i-1; j++) {
                 if(arr[j] > arr[j+1]) {
                     int temp = arr[j+1];
                     arr[j+1] = arr[j];
                     arr[j] = temp;
+                    didSwap = 1;
                 }
             }
+            if(didSwap == 0) break;
+            System.out.println("Runs");
         }
     }
 }
