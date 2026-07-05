@@ -1,4 +1,4 @@
-/*Remove Duplicates from Sorted Array*/
+/*26. Remove Duplicates from Sorted Array*/
 public class Remove_duplicates_26 {
     public static void main(String[] args) {
         int a[] = {1,1,2,2,2,3,3};

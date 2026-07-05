@@ -1,5 +1,3 @@
-package Striver;
-
 public class Second_largest {
     public static void main(String[] args) {
         int a[] = {9,1,6,3,9,8,2,4,5,7};

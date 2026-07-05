@@ -1,3 +1,4 @@
+/*Left Rotate array by 1 place */
 public class rotate {
     public static void main(String[] args) {
         int arr[] = {10,20,30,40,50};

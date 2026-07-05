@@ -4,7 +4,7 @@ Note that you must do this in-place without making a copy of the array.
 */
 public class ZeroatEnd_283 {
     public static void main(String[] args) {
-        int a[]={1,2};
+        int a[]={1,0,0,2};
         Zero(a);
         for(int i=0; i<a.length; i++) {
             System.out.print(a[i]+" ");
